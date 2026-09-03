@@ -1,0 +1,106 @@
+.vida-hero {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+}
+
+.vida-hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.vida-hero-media picture,
+.vida-hero-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.vida-hero-media img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Dark overlay */
+.vida-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      rgb(0 0 0 / 72%) 0%,
+      rgb(0 0 0 / 45%) 38%,
+      rgb(0 0 0 / 12%) 68%,
+      rgb(0 0 0 / 0%) 100%
+    );
+}
+
+.vida-hero-content {
+  width: min(100%, 1400px);
+  margin: 0 auto;
+  padding: 80px 64px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.vida-hero-title {
+  max-width: 850px;
+  margin: 0 0 48px;
+  color: #fff;
+  font-size: clamp(42px, 5vw, 82px);
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.vida-hero-cta {
+  display: inline-block;
+  color: #ff4b00;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.vida-hero-cta:hover,
+.vida-hero-cta:focus-visible {
+  text-decoration-thickness: 3px;
+}
+
+@media (width <= 767px) {
+  .vida-hero {
+    min-height: 540px;
+  }
+
+  .vida-hero-content {
+    padding: 48px 24px;
+  }
+
+  .vida-hero-title {
+    font-size: clamp(38px, 12vw, 58px);
+    margin-bottom: 32px;
+  }
+
+  .vida-hero-cta {
+    font-size: 20px;
+  }
+
+  .vida-hero::after {
+    background:
+      linear-gradient(
+        90deg,
+        rgb(0 0 0 / 72%) 0%,
+        rgb(0 0 0 / 42%) 70%,
+        rgb(0 0 0 / 15%) 100%
+      );
+  }
+}
