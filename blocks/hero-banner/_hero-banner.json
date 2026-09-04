@@ -23,30 +23,30 @@
         {
           "component": "reference",
           "valueType": "string",
-          "name": "image",
+          "name": "heroImage",
           "label": "Hero Image",
           "multi": false
         },
         {
           "component": "text",
-          "name": "heading",
+          "valueType": "string",
+          "name": "heroHeading",
           "label": "Heading",
-          "value": "700+ Hero VIDA Authorised Service Stations",
-          "valueType": "string"
+          "value": "700+ Hero VIDA Authorised Service Stations"
         },
         {
           "component": "text",
-          "name": "ctaText",
+          "valueType": "string",
+          "name": "ctaLabel",
           "label": "CTA Text",
-          "value": "Locate a Service Station",
-          "valueType": "string"
+          "value": "Locate a Service Station"
         },
         {
-          "component": "aem-content",
-          "name": "ctaLink",
-          "label": "CTA Link",
-          "value": "",
-          "valueType": "string"
+          "component": "text",
+          "valueType": "string",
+          "name": "ctaUrl",
+          "label": "CTA URL",
+          "value": ""
         }
       ]
     }
