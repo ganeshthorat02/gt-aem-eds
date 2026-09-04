@@ -190,38 +190,38 @@
     ]
   },
   {
-  "id": "vida-hero",
-  "fields": [
-    {
-      "component": "reference",
-      "valueType": "string",
-      "name": "heroImage",
-      "label": "Hero Image",
-      "multi": false
-    },
-    {
-      "component": "text",
-      "valueType": "string",
-      "name": "heroHeading",
-      "label": "Heading",
-      "value": "700+ Hero VIDA Authorised Service Stations"
-    },
-    {
-      "component": "text",
-      "valueType": "string",
-      "name": "ctaLabel",
-      "label": "CTA Text",
-      "value": "Locate a Service Station"
-    },
-    {
-      "component": "text",
-      "valueType": "string",
-      "name": "ctaUrl",
-      "label": "CTA URL",
-      "value": ""
-    }
-  ]
-},
+    "id": "hero-banner",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Hero Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "heading",
+        "label": "Heading",
+        "value": "700+ Hero VIDA Authorised Service Stations",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "value": "Locate a Service Station",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "value": "",
+        "valueType": "string"
+      }
+    ]
+  },
   {
     "id": "hero",
     "fields": [

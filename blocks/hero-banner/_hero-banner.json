@@ -1,15 +1,15 @@
 {
   "definitions": [
     {
-      "title": "VIDA Hero",
-      "id": "vida-hero",
+      "title": "Hero Banner",
+      "id": "hero-banner",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "vida-hero",
-              "model": "vida-hero"
+              "name": "hero-banner",
+              "model": "hero-banner"
             }
           }
         }
@@ -18,7 +18,7 @@
   ],
   "models": [
     {
-      "id": "vida-hero",
+      "id": "hero-banner",
       "fields": [
         {
           "component": "reference",
